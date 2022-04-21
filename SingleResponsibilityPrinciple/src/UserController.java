@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 //Handles incoming JSON requests that work on User resource/entity
 public class UserController {
 
+    // UserController should not include business logic in it.
     // This class must only handle creating users not checking if they are valid, this only violates Single Responsibility Principle.
     // ObjectMapper can also be in a different class, violates SRP.
     // Rather than storing user directly, we can create a class called UserPersistenceService to ensure we can add more storing classes in the future.
